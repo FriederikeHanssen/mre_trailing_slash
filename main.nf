@@ -1,6 +1,6 @@
 process WRITE_FILE {
 
-    container: "nf-core/ubuntu:20.04"
+    container "quay.io/nf-core/ubuntu:20.04"
     publishDir       = [
             mode: 'copy',
             path: { "${params.outdir}" }
