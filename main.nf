@@ -3,7 +3,7 @@ process WRITE_FILE {
     container "quay.io/nf-core/ubuntu:20.04"
     publishDir       = [
             mode: 'copy',
-            path: { "${params.outdir}" }
+            path: { "${params.outdir}/textfile" }
     ]
 
     input:
